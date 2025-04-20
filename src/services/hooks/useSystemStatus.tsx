@@ -65,7 +65,7 @@ function useSystemStatus() {
 }
 
 async function logs(key: string): Promise<ServiceStatus> {
-    const response = await fetch(`https://raw.githubusercontent.com/Heuplus/services-status-page/main/public/status/${key}_report.log`);
+    const response = await fetch(`https://raw.githubusercontent.com/Heuplus/Heuplus.github.io/main/public/status/${key}_report.log`);
     const text = await response.text();
     const lines = text.split("\n");
     try {
